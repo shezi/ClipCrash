@@ -1,0 +1,234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C7FB64E140FA5ED00EE779D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C7FB64D140FA5ED00EE779D /* Foundation.framework */; };
+		1C7FB651140FA5ED00EE779D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FB650140FA5ED00EE779D /* main.m */; };
+		1C7FB65B140FA63900EE779D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C7FB65A140FA63900EE779D /* AppKit.framework */; };
+		1C7FB65E140FA68A00EE779D /* ClipHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FB65D140FA68A00EE779D /* ClipHolder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1C7FB647140FA5ED00EE779D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1C7FB649140FA5ED00EE779D /* ClipCrash */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClipCrash; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7FB64D140FA5ED00EE779D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1C7FB650140FA5ED00EE779D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C7FB653140FA5ED00EE779D /* ClipCrash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClipCrash-Prefix.pch"; sourceTree = "<group>"; };
+		1C7FB654140FA5ED00EE779D /* ClipCrash.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ClipCrash.1; sourceTree = "<group>"; };
+		1C7FB65A140FA63900EE779D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1C7FB65C140FA68A00EE779D /* ClipHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipHolder.h; sourceTree = "<group>"; };
+		1C7FB65D140FA68A00EE779D /* ClipHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipHolder.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C7FB646140FA5ED00EE779D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7FB65B140FA63900EE779D /* AppKit.framework in Frameworks */,
+				1C7FB64E140FA5ED00EE779D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C7FB63E140FA5ED00EE779D = {
+			isa = PBXGroup;
+			children = (
+				1C7FB64F140FA5ED00EE779D /* ClipCrash */,
+				1C7FB64C140FA5ED00EE779D /* Frameworks */,
+				1C7FB64A140FA5ED00EE779D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C7FB64A140FA5ED00EE779D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C7FB649140FA5ED00EE779D /* ClipCrash */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C7FB64C140FA5ED00EE779D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C7FB65A140FA63900EE779D /* AppKit.framework */,
+				1C7FB64D140FA5ED00EE779D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C7FB64F140FA5ED00EE779D /* ClipCrash */ = {
+			isa = PBXGroup;
+			children = (
+				1C7FB650140FA5ED00EE779D /* main.m */,
+				1C7FB654140FA5ED00EE779D /* ClipCrash.1 */,
+				1C7FB652140FA5ED00EE779D /* Supporting Files */,
+				1C7FB65C140FA68A00EE779D /* ClipHolder.h */,
+				1C7FB65D140FA68A00EE779D /* ClipHolder.m */,
+			);
+			path = ClipCrash;
+			sourceTree = "<group>";
+		};
+		1C7FB652140FA5ED00EE779D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C7FB653140FA5ED00EE779D /* ClipCrash-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C7FB648140FA5ED00EE779D /* ClipCrash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C7FB657140FA5ED00EE779D /* Build configuration list for PBXNativeTarget "ClipCrash" */;
+			buildPhases = (
+				1C7FB645140FA5ED00EE779D /* Sources */,
+				1C7FB646140FA5ED00EE779D /* Frameworks */,
+				1C7FB647140FA5ED00EE779D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClipCrash;
+			productName = ClipCrash;
+			productReference = 1C7FB649140FA5ED00EE779D /* ClipCrash */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C7FB640140FA5ED00EE779D /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1C7FB643140FA5ED00EE779D /* Build configuration list for PBXProject "ClipCrash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1C7FB63E140FA5ED00EE779D;
+			productRefGroup = 1C7FB64A140FA5ED00EE779D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C7FB648140FA5ED00EE779D /* ClipCrash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C7FB645140FA5ED00EE779D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7FB651140FA5ED00EE779D /* main.m in Sources */,
+				1C7FB65E140FA68A00EE779D /* ClipHolder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1C7FB655140FA5ED00EE779D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1C7FB656140FA5ED00EE779D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1C7FB658140FA5ED00EE779D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClipCrash/ClipCrash-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C7FB659140FA5ED00EE779D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClipCrash/ClipCrash-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C7FB643140FA5ED00EE779D /* Build configuration list for PBXProject "ClipCrash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7FB655140FA5ED00EE779D /* Debug */,
+				1C7FB656140FA5ED00EE779D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C7FB657140FA5ED00EE779D /* Build configuration list for PBXNativeTarget "ClipCrash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7FB658140FA5ED00EE779D /* Debug */,
+				1C7FB659140FA5ED00EE779D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C7FB640140FA5ED00EE779D /* Project object */;
+}
