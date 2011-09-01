@@ -1,0 +1,15 @@
+This application can crash your Macs clipboard.
+
+The process to do so is quite simple, but requires a few manual steps.
+0. Close all applications that are not vital to this test, i.e. everything except Activity Monitor and XCode.
+1. Load the project in XCode and start it.
+2. Let it run for a few seconds. You can put a few things into your clipboard to see the output.
+3. Kill the application in XCode.
+4. You should get the familiar "kill\nquit\nProgram ended with exit code: 0" message.
+5. Try to copy something to the clipboard. The application that you do this in will lock up (if not, repeat steps 2--4). In fact, any application that tries to access the system clipboard will freeze up and go into a loop. This can and will include XCode, every browser you have open, every terminal you have open and eventually the Finder.
+
+As soon as your Finder freezes, you don't have much chance to save your system. The only thing that helps is a hard shut down. If your Finder isn't frozen yet, you can avoid the shutdown by quickly force-killing every frozen application and logging out. Logging back in will reset the clipboard and give you a clean slate.
+
+I have tried debugging into a freezing application, and the code the breaks is already the retrieval of the system clipboard via
+  pb = [NSPasteboard generalPasteboard];
+This call will go into a rather tight spin lock, from which it will not return. As to the reason for this, I have no idea.
