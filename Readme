@@ -1,6 +1,7 @@
-This application can crash your Macs clipboard.
+This application can crash your Macs clipboard, at least on Snow Leopard 10.6.8
 
 The process to do so is quite simple, but requires a few manual steps.
+
 0. Close all applications that are not vital to this test, i.e. everything except Activity Monitor and XCode.
 1. Load the project in XCode and start it.
 2. Let it run for a few seconds. You can put a few things into your clipboard to see the output.
@@ -13,3 +14,6 @@ As soon as your Finder freezes, you don't have much chance to save your system. 
 I have tried debugging into a freezing application, and the code the breaks is already the retrieval of the system clipboard via
   pb = [NSPasteboard generalPasteboard];
 This call will go into a rather tight spin lock, from which it will not return. As to the reason for this, I have no idea.
+
+Note that the only reference I could find to a similar phenomenon is a StackOverflow question under
+http://stackoverflow.com/questions/2796997/crashing-the-os-x-pasteboard
